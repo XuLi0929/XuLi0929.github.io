@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xu (Oscar) Li - Publications</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .publications-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .publication-card {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .publication-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .publication-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .publication-authors {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication-venue {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .publication-abstract {
+            margin-bottom: 1.5rem;
+        }
+        
+        .publication-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .publication-links a {
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .publication-links a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .publication-thumbnail {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .publication-thumbnail img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .publication-thumbnail img:hover {
+            transform: scale(1.03);
+        }
+        
+        .filters {
+            display: flex;
+            margin-bottom: 2rem;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background-color: var(--light-bg);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .year-divider {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 2rem 0 1rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .publication-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Xu Li</div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="index.html#news">News</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="publications-page">
+            <div class="container">
+                <h1>Publications</h1>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="conference">Conference Papers</button>
+                    <button class="filter-btn" data-filter="journal">Journal Papers</button>
+                    <button class="filter-btn" data-filter="under-review">Under Review</button>
+                </div>
+                
+                <div class="publications-container">
+                    <!-- Year divider -->
+                    <div class="year-divider">2024</div>
+                    
+                    <!-- Publication 1 -->
+                    <div class="publication-card" data-type="conference">
+                        <div class="publication-thumbnail">
+                            <img src="https://via.placeholder.com/800x400?text=Emotion+Recognition" alt="Multi-modal emotion recognition">
+                        </div>
+                        <h3 class="publication-title">Enhancing Video-Based Emotion Recognition with Multi-Head Attention and Modality Dropout</h3>
+                        <p class="publication-authors">Xu (Oscar) Li, et al.</p>
+                        <p class="publication-venue">2nd International Conference on Machine Learning and Automation (CONF-MLA 2024)</p>
+                        <div class="publication-abstract">
+                            <p>This paper presents an innovative approach to emotion recognition in videos by integrating multi-head attention mechanisms with a novel modality dropout technique. Our CFNSR-MAFNet model combines audio features extracted via MFCCs with visual features from ResNext, achieving 78.3% accuracy on the Ravdess dataset. The cross-modal fusion approach demonstrates superior performance compared to single-modality methods.</p>
+                        </div>
+                        <div class="publication-links">
+                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="#"><i class="fas fa-code"></i> Code</a>
+                            <a href="#"><i class="fas fa-desktop"></i> Slides</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Publication 2 -->
+                    <div class="publication-card" data-type="under-review">
+                        <div class="publication-thumbnail">
+                            <img src="https://via.placeholder.com/800x400?text=Landmark+Recognition" alt="Landmark recognition and retrieval">
+                        </div>
+                        <h3 class="publication-title">Recent advancements in Landmark Recognition & Retrieval Across Diverse Models: A survey</h3>
+                        <p class="publication-authors">Xu (Oscar) Li, et al.</p>
+                        <p class="publication-venue">Under Review</p>
+                        <div class="publication-abstract">
+                            <p>This comprehensive survey examines recent advancements in landmark recognition and retrieval systems, analyzing key trends, challenges, and innovations in the field. We categorize and compare various approaches, including CNN-based methods and hybrid models, highlighting their strengths, limitations, and potential future directions for research and practical applications.</p>
+                        </div>
+                        <div class="publication-links">
+                            <a href="#"><i class="fas fa-file-pdf"></i> Preprint</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Year divider -->
+                    <div class="year-divider">2023-2024</div>
+                    
+                    <!-- Publication 3 -->
+                    <div class="publication-card" data-type="conference">
+                        <div class="publication-thumbnail">
+                            <img src="https://via.placeholder.com/800x400?text=Animal+Classification" alt="Wild animal classification">
+                        </div>
+                        <h3 class="publication-title">Exploring the effect of different feature enhancement methods on wild animal classification</h3>
+                        <p class="publication-authors">Xu (Oscar) Li, et al.</p>
+                        <p class="publication-venue">21th International Computer Conference on Wavelet Active Media Technology and Information Processing</p>
+                        <div class="publication-abstract">
+                            <p>This study investigates the impact of various feature enhancement techniques on the performance of deep learning models for wild animal classification. We compare CBAM, DANet, and BAM approaches on a dataset comprising 90 different animal species. Our best-performing model achieved 92.2% accuracy, with a detailed analysis of how different enhancement methods affect classification performance across diverse animal categories.</p>
+                        </div>
+                        <div class="publication-links">
+                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="#"><i class="fas fa-code"></i> Code</a>
+                            <a href="#"><i class="fas fa-desktop"></i> Slides</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>Email: li.xu2@northeastern.edu</p>
+                <p>Tel: +1 617 8746480</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-google-scholar"></i></a>
+                </div>
+            </div>
+            <div class="credits">
+                <p>© 2024 Xu (Oscar) Li | Built with HTML, CSS, and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Publications filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const publicationCards = document.querySelectorAll('.publication-card');
+        const yearDividers = document.querySelectorAll('.year-divider');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                // Filter publications
+                publicationCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-type') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Show/hide year dividers based on what's visible
+                yearDividers.forEach(divider => {
+                    const nextElements = [];
+                    let nextElement = divider.nextElementSibling;
+                    
+                    while (nextElement && !nextElement.classList.contains('year-divider')) {
+                        nextElements.push(nextElement);
+                        nextElement = nextElement.nextElementSibling;
+                    }
+                    
+                    const anyVisible = nextElements.some(
+                        el => el.style.display !== 'none' && el.classList.contains('publication-card')
+                    );
+                    
+                    divider.style.display = anyVisible ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
