@@ -41,6 +41,14 @@ a:hover {
     color: var(--secondary-color);
 }
 
+/* Chinese Name Style */
+.chinese-name {
+    font-size: 0.8em;
+    margin-left: 10px;
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+
 /* Header Styles */
 header {
     background-color: white;
