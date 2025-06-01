@@ -6,6 +6,108 @@
     <title>CV - Xu Li</title>
     <link rel="stylesheet" href="minimal-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .experience-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
+        
+        .university-logo {
+            flex-shrink: 0;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .university-logo img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            object-position: center;
+        }
+        
+        .experience-content {
+            flex: 1;
+        }
+        
+        .university-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-light);
+        }
+        
+        .date-range {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+        
+        .position {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .mentor-info {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .mentor-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .mentor-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .degree-info {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            .experience-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .university-logo {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .university-logo img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        
+        body.dark-mode .university-name,
+        body.dark-mode .date-range,
+        body.dark-mode .position,
+        body.dark-mode .degree-info,
+        body.dark-mode .mentor-info {
+            color: var(--text-dark);
+        }
+        
+        body.dark-mode .university-logo {
+            background-color: #2a2a2a;
+            box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>

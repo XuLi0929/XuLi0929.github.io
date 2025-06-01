@@ -22,6 +22,16 @@
         body.dark-mode .publication-figure img {
             box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
         }
+        
+        .publication-separator {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid var(--border-light);
+        }
+        
+        body.dark-mode .publication-separator {
+            border-top-color: var(--border-dark);
+        }
     </style>
 </head>
 <body>
@@ -55,6 +65,8 @@
                     <div class="publication-figure">
                         <img src="code_fig1.jpg" alt="MM-Prompt Framework Overview">
                     </div>
+                    
+                    <hr class="publication-separator">
                     
                     <p><strong>Enhancing earthquake detection systems through ai based frameworks for multimodal learning and sensor integration models</strong><br>
                     <em>Xu Li, et al.</em><br>
