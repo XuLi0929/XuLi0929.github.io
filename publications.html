@@ -6,6 +6,23 @@
     <title>Publications - Xu Li</title>
     <link rel="stylesheet" href="minimal-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .publication-figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .publication-figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        body.dark-mode .publication-figure img {
+            box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,7 +42,6 @@
     <main>
         <section class="publications">
             <div class="container">
-                <h1>Publications 李旭</h1>
                 
                 <div class="research-content">
                     <h2>2025</h2>
@@ -33,9 +49,18 @@
                     <p><strong>🌟 MM-Prompt: Cross-Modal Prompt Tuning for Continual Visual Question Answering</strong><br>
                     <em>Xu Li, Fan Lyu</em><br>
                     arXiv preprint (arXiv:2505.19455), May 2025<br>
-                    <a href="https://arxiv.org/abs/2505.19455" target="_blank">paper</a> | <a href="#" target="_blank">code_fig1</a><br>
+                    <a href="https://arxiv.org/abs/2505.19455" target="_blank">paper</a><br>
                     <br>
                     <strong>Abstract:</strong> Continual Visual Question Answering (CVQA) based on pre-trained models (PTMs) has achieved promising progress by leveraging prompt tuning to enable continual multi-modal learning. However, most existing methods adopt cross-modal prompt isolation, constructing visual and textual prompts separately, which exacerbates modality imbalance and leads to degraded performance over time. To tackle this issue, we propose MM-Prompt, a novel framework incorporating cross-modal prompt query and cross-modal prompt recovery. The former enables balanced prompt selection by incorporating cross-modal signals during query formation, while the latter promotes joint prompt reconstruction through iterative cross-modal interactions, guided by an alignment loss to prevent representational drift. Extensive experiments show that MM-Prompt surpasses prior approaches in accuracy and knowledge retention, while maintaining balanced modality engagement throughout continual learning.</p>
+                    
+                    <div class="publication-figure">
+                        <img src="code_fig1.jpg" alt="MM-Prompt Framework Overview">
+                    </div>
+                    
+                    <p><strong>Enhancing earthquake detection systems through ai based frameworks for multimodal learning and sensor integration models</strong><br>
+                    <em>Xu Li, et al.</em><br>
+                    DYNA, April 2025<br>
+                    <em>accepted</em></p>
                     
                     <h2>2024</h2>
                     
