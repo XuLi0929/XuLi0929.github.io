@@ -1,0 +1,244 @@
+/* Minimal Styles inspired by yutatokoi.com */
+:root {
+    --bg-light: #ffffff;
+    --bg-dark: #1a1a1a;
+    --text-light: #333333;
+    --text-dark: #e0e0e0;
+    --accent: #0066cc;
+    --border-light: #e0e0e0;
+    --border-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-light);
+    background-color: var(--bg-light);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    padding: 40px 0 20px;
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--accent);
+}
+
+/* Typography */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 15px;
+    color: var(--text-light);
+}
+
+h2:first-of-type {
+    margin-top: 20px;
+}
+
+/* Main Content */
+.container {
+    max-width: 100%;
+}
+
+.profile {
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.intro-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.intro-text a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.intro-text a:hover {
+    text-decoration: underline;
+}
+
+.intro-text hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid var(--border-light);
+}
+
+/* Research Content */
+.research-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.research-content a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.research-content a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-light);
+}
+
+.contact p {
+    margin-bottom: 15px;
+}
+
+.contact a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--text-light);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: var(--text-dark);
+}
+
+body.dark-mode header {
+    border-bottom-color: var(--border-dark);
+}
+
+body.dark-mode .nav-links a {
+    color: var(--text-dark);
+}
+
+body.dark-mode .theme-toggle {
+    color: var(--text-dark);
+}
+
+body.dark-mode .intro-text hr {
+    border-top-color: var(--border-dark);
+}
+
+body.dark-mode .contact {
+    border-top-color: var(--border-dark);
+}
+
+body.dark-mode .social-links a {
+    color: var(--text-dark);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 0 15px;
+    }
+    
+    header {
+        padding: 30px 0 15px;
+    }
+    
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+} 

@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xu (Oscar) Li - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Xu Li</title>
+    <link rel="stylesheet" href="minimal-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Xu Li</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="#news">News</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="research.html">research</a></li>
+                <li><a href="publications.html">publications</a></li>
+                <li><a href="cv.html">cv</a></li>
             </ul>
             <div class="theme-toggle">
                 <i class="fas fa-moon"></i>
@@ -25,132 +23,33 @@
     </header>
 
     <main>
-        <section id="intro" class="hero">
+        <section id="home" class="intro">
             <div class="container">
-                <div class="hero-content">
-                    <h1>Xu (Oscar) Li <span class="chinese-name">李旭</span></h1>
-                    <p class="subtitle">Computer Science Student at Northeastern University</p>
-                </div>
-                <div class="hero-image">
-                    <img src="Xu Li.jpg" alt="Xu (Oscar) Li">
-                </div>
-            </div>
-        </section>
+                <div class="profile">
+                    <div class="intro-text">
+                        <p>Hi, I'm Xu Li (李旭), a computer science student at Northeastern University Boston, MA.</p>
+    
+                        <p>I'm interested in Machine Learning, especially Multi Modal Learning and Continual Learning. I'm also interested in LLMs and their applications.</p>
+                        
+                        <p>Currently working on the foundation model on AI in EPS in the UCB <a href="https://ai4eps.github.io/homepage/" target="_blank">AI4EPS</a> led by Prof. Weiqiang Zhu.</p>
+                        
+                        <p>I'm also a member in <a href="https://wyshi.github.io/group.html" target="_blank">Chats Lab</a>, where I explore the LLMs under the supervision of Prof. Weiyan Shi.</p>
 
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am a computer science student at Northeastern University, Boston, MA, with an expected graduation date of May 2026.</p>
-                
-                <p>Also, I'm currently a research assistant in <a href="https://wyshi.github.io/group.html" target="_blank">Chats Lab</a> advised by Weiyan Shi. Before this, I have worked as an intern researcher in UESTC.</p>
-                
-                <p>I'll join AI4EPS in UCB as a research assistant this summer and advised by Professor Weiqiang Zhu.</p>
-                
-                <p>My Research Interests include Multi-Modal Learning, Continual Learning, and Large Language Models.</p>
-            </div>
-        </section>
-
-        <section id="research">
-            <div class="container">
-                <h2>Research Interests</h2>
-                <div class="research-areas">
-                    <div class="research-area">
-                        <h3>Multi-Modal Learning</h3>
-                        <p>Inspired by how humans naturally process and integrate information from different modalities, I'm developing multi-modal systems that can similarly understand and reason across diverse inputs. My work includes multi-modal emotion recognition and earthquake prediction models that combine visual, acoustic, and seismic data streams to achieve more robust and comprehensive understanding.</p>
-                    </div>
-                    <div class="research-area">
-                        <h3>Continual Learning</h3>
-                        <p>I'm fascinated by how humans can continuously acquire new knowledge without catastrophically forgetting previous information. My research explores continual learning approaches, including continual prompt learning and continual multi-modal learning, aiming to develop AI systems that can adaptively learn over time while maintaining performance on previously learned tasks.</p>
-                    </div>
-                    <div class="research-area">
-                        <h3>Large Language Models</h3>
-                        <p>I investigate how large language models can be enhanced for more faithful, interpretable, and personalized interactions. Through projects like the LLM Persuasion Arena, I explore how these models can be fine-tuned to understand complex human intentions while maintaining safety guardrails, pushing the boundaries of what's possible in human-AI collaboration.</p>
                     </div>
                 </div>
                 
-                <div class="philosophy">
-                    <h3>Research Philosophy</h3>
-                    <p>I believe in building efficient, high-performing models that can be deployed in resource-constrained environments while maintaining accuracy and reliability.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="publications">
-            <div class="container">
-                <h2>Selected Publications</h2>
-                <div class="publication">
-                    <h3>Exploring the effect of different feature enhancement methods on wild animal classification</h3>
-                    <p class="authors">Xu (Oscar) Li, et al.</p>
-                    <p class="venue">21th International Computer Conference on Wavelet Active Media Technology and Information Processing</p>
-                    <div class="links">
-                        <a href="#">Paper</a>
-                        <a href="#">Code</a>
-                    </div>
-                </div>
-                <div class="publication">
-                    <h3>Enhancing Video-Based Emotion Recognition with Multi-Head Attention and Modality Dropout</h3>
-                    <p class="authors">Xu (Oscar) Li</p>
-                    <p class="venue">2nd International Conference on Machine Learning and Automation (CONF-MLA 2024)</p>
-                    <div class="links">
-                        <a href="http://dx.doi.org/10.4108/eai.21-11-2024.2354608" target="_blank">Paper</a>
-                        <a href="#">Code</a>
-                    </div>
-                </div>
-                <div class="see-more">
-                    <a href="publications.html" class="button">See All Publications</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="news">
-            <div class="container">
-                <h2>News</h2>
-                <div class="news-item">
-                    <div class="date">December 2024</div>
-                    <div class="content">
-                        <p>Started as a Research Assistant at ChatsLab, Northeastern University, supervised by Prof. WeiYan Shi</p>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <div class="date">October 2024</div>
-                    <div class="content">
-                        <p>Completed research project with Carnegie Mellon University on landmark recognition/retrieval</p>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <div class="date">September 2024</div>
-                    <div class="content">
-                        <p>Paper on emotion recognition accepted by CONF-MLA 2024</p>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <div class="date">June 2024</div>
-                    <div class="content">
-                        <p>Joined the International Lab of Intelligent Information Processing and Wavelet Analysis at UESTC as a Research Assistant</p>
+                <div class="contact">
+                    <p>Email: <a href="mailto:li.xu2@northeastern.edu">li.xu2@northeastern.edu</a></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-google-scholar"></i></a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="contact">
-                <h3>Contact</h3>
-                <p>Email: li.xu2@northeastern.edu</p>
-                <p>Tel: +1 617 8746480</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-google-scholar"></i></a>
-                </div>
-            </div>
-            <div class="credits">
-                <p>© 2024 Xu (Oscar) Li | Built with HTML, CSS, and JavaScript</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="minimal-script.js"></script>
 </body>
 </html> 

@@ -3,116 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xu (Oscar) Li - CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CV - Xu Li</title>
+    <link rel="stylesheet" href="minimal-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .cv-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: white;
-            box-shadow: var(--shadow);
-            border-radius: var(--border-radius);
-        }
-        
-        .cv-section {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .cv-section:last-child {
-            border-bottom: none;
-        }
-        
-        .entry {
-            margin-bottom: 1.5rem;
-        }
-        
-        .entry-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-        }
-        
-        .entry-title {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-        
-        .entry-date {
-            color: #666;
-        }
-        
-        .entry-location {
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
-        
-        .entry-description {
-            margin-top: 0.5rem;
-            padding-left: 1rem;
-            border-left: 2px solid var(--secondary-color);
-        }
-        
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-        
-        .skill {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-        
-        .download-btn {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.8rem 1.5rem;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        
-        .download-btn:hover {
-            background-color: var(--secondary-color);
-            color: white;
-        }
-        
-        @media print {
-            header, footer, .download-btn {
-                display: none;
-            }
-            
-            body {
-                background-color: white;
-                color: black;
-            }
-            
-            .cv-container {
-                box-shadow: none;
-                padding: 0;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Xu Li</div>
             <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#research">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="research.html">research</a></li>
+                <li><a href="publications.html">publications</a></li>
+                <li><a href="cv.html">cv</a></li>
             </ul>
             <div class="theme-toggle">
                 <i class="fas fa-moon"></i>
@@ -121,203 +23,33 @@
     </header>
 
     <main>
-        <section class="cv-page">
+        <section class="cv">
             <div class="container">
-                <h1>Curriculum Vitae <span class="chinese-name">李旭</span></h1>
-                <div class="cv-container">
-                    <!-- Education Section -->
-                    <div class="cv-section">
-                        <h2>Education</h2>
-                        
-                        <div class="entry">
-                            <div class="entry-header">
-                                <div class="entry-title">Bachelor of Science in Computer Science</div>
-                                <div class="entry-date">Expected May 2026</div>
-                            </div>
-                            <div class="entry-location">Northeastern University, Boston, MA</div>
-                            <div class="entry-description">
-                                <p>GPA: 4.00/4.00</p>
-                                <p>Major Courses: Machine Learning and Data Mining, Artificial Intelligence, Object-Oriented Design, Algorithms and Data, Database Design, Probability and Statistics</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Research Experience Section -->
-                    <div class="cv-section">
-                        <h2>Research Experience</h2>
-                        
-                        <div class="entry">
-                            <div class="entry-header">
-                                <div class="entry-title">Research Assistant | ChatsLab</div>
-                                <div class="entry-date">December 2024 - Present</div>
-                            </div>
-                            <div class="entry-location">Northeastern University, Boston, United States</div>
-                            <div class="entry-description">
-                                <p>Supervised by Prof. WeiYan Shi</p>
-                                <p>Project: LLM Persuasion Arena</p>
-                                <ul>
-                                    <li>Arena is a platform where users can test different persuasion techniques in a simulated conversation with different LLM agents; These agents are based on different models and can be used to test different strategies.</li>
-                                    <li>Implemented personalization module, allowing users to customize the persona for a LLM agent (i.e. Age, income, personalities); the agent will strictly follow the persona during the conversation.</li>
-                                    <li>Developed a new evaluation matrix for the judge of the conversation, allowing users to test LLM's ability as personalized judge and its ability to estimate user's persona based on conversation history.</li>
-                                    <li>Future direction: LLM jail breaker</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="entry">
-                            <div class="entry-header">
-                                <div class="entry-title">Research Assistant | International Lab of Intelligent Information Processing and Wavelet Analysis</div>
-                                <div class="entry-date">June 2024 - Present</div>
-                            </div>
-                            <div class="entry-location">University of Electronic Science and Technology of China (UESTC), Chengdu, China</div>
-                            <div class="entry-description">
-                                <p>Project: Multi-modal model used for Earthquake prediction</p>
-                                <ul>
-                                    <li>Developed a framework that integrates diverse seismic data sources into a unified AI-driven system to improve earthquake detection, real-time monitoring, early warning, and disaster risk reduction and preparedness.</li>
-                                    <li>Weights each source in modality Seismic Waveforms (image), Accelerometer Data and other data (text), aims to improve accuracy and responsiveness in dynamic seismic environments.</li>
-                                </ul>
-                                <p>Project: Exploring the effect for different feature enhancement method on wild animal differentiation</p>
-                                <ul>
-                                    <li>Built and trained models to classify 90 different species of animals, the best model achieved 92.2% of accuracy.</li>
-                                    <li>Applied CBAM, DANet and BAM separately to enhance the extracted features and analyze their performance.</li>
-                                    <li>Publication: "Exploring the effect of different feature enhancement methods on wild animal classification" (Accepted by 21th International Computer Conference on Wavelet Active Media Technology and Information Processing)</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="entry">
-                            <div class="entry-header">
-                                <div class="entry-title">Team Member | Algorithms for Big Data Models and Applications</div>
-                                <div class="entry-date">August 2024 - October 2024</div>
-                            </div>
-                            <div class="entry-location">Remote | Mentor: Prof. David P. Woodruff, Carnegie Mellon University</div>
-                            <div class="entry-description">
-                                <ul>
-                                    <li>Conducted an in-depth literature review on landmark recognition/retrieval, analyzing recent advancements, key challenges, and emerging trends within CNN and Hybrid model.</li>
-                                    <li>Evaluated and synthesized findings, categorizing sources based on their themes to highlight contrasts and convergence in approaches.</li>
-                                    <li>Publication "Recent advancements in Landmark Recognition & Retrieval Across Diverse Models: A survey" (Under Review)</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="entry">
-                            <div class="entry-header">
-                                <div class="entry-title">Team Leader | Multi-Dimensional Applications of Machine Learning and Deep Learning</div>
-                                <div class="entry-date">July 2024 - September 2024</div>
-                            </div>
-                            <div class="entry-location">Remote | Mentor: Prof. Bjorn Schuller, Imperial College London</div>
-                            <div class="entry-description">
-                                <ul>
-                                    <li>Designed and implemented a Multi-modal model CFNSR-MAFNet with cross-modal/hybrid fusion for emotion recognition in Ravdess dataset. Achieved 78.3% of accuracy.</li>
-                                    <li>Used MFCCs to extract features from the audio and ResNext for video, features will then be combined by a cross-modal block and finally pass to multi-head attention.</li>
-                                    <li>Publication: "Enhancing Video-Based Emotion Recognition with Multi-Head Attention and Modality Dropout." (Accepted by the 2nd International Conference on Machine Learning and Automation (CONF-MLA 2024))</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="entry">
-                            <div class="entry-header">
-                                <div class="entry-title">Team Member | AI Deep Learning and Causality-Artificial Intelligence and Deep Learning Specialization</div>
-                                <div class="entry-date">July 2023 - August 2023</div>
-                            </div>
-                            <div class="entry-location">Remote | Mentor: Prof. Nicholas Lane, University of Cambridge</div>
-                            <div class="entry-description">
-                                <ul>
-                                    <li>Designed and implemented a lightweight CNN model that used to do the "Classification of Dogs and Cats" focus on efficiency and performance, Ideal for resource-constrained environments with commendable accuracy.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Publications Section -->
-                    <div class="cv-section">
-                        <h2>Publications</h2>
-                        
-                        <div class="entry">
-                            <div class="entry-title">Exploring the effect of different feature enhancement methods on wild animal classification</div>
-                            <div class="entry-description">
-                                <p>Xu (Oscar) Li, et al.</p>
-                                <p>21th International Computer Conference on Wavelet Active Media Technology and Information Processing</p>
-                            </div>
-                        </div>
-                        
-                        <div class="entry">
-                            <div class="entry-title">Enhancing Video-Based Emotion Recognition with Multi-Head Attention and Modality Dropout</div>
-                            <div class="entry-description">
-                                <p>Xu (Oscar) Li, et al.</p>
-                                <p>2nd International Conference on Machine Learning and Automation (CONF-MLA 2024)</p>
-                            </div>
-                        </div>
-
-                        <div class="entry">
-                            <div class="entry-title">Recent advancements in Landmark Recognition & Retrieval Across Diverse Models: A survey</div>
-                            <div class="entry-description">
-                                <p>Xu (Oscar) Li, et al.</p>
-                                <p>Under Review</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Skills Section -->
-                    <div class="cv-section">
-                        <h2>Skills</h2>
-                        
-                        <div class="entry">
-                            <div class="entry-title">Programming Languages</div>
-                            <div class="skills">
-                                <span class="skill">Python</span>
-                                <span class="skill">Java</span>
-                                <span class="skill">C++</span>
-                                <span class="skill">JavaScript</span>
-                                <span class="skill">SQL</span>
-                            </div>
-                        </div>
-                        
-                        <div class="entry">
-                            <div class="entry-title">Frameworks & Tools</div>
-                            <div class="skills">
-                                <span class="skill">TensorFlow</span>
-                                <span class="skill">PyTorch</span>
-                                <span class="skill">Scikit-learn</span>
-                                <span class="skill">CUDA</span>
-                                <span class="skill">Git</span>
-                                <span class="skill">Docker</span>
-                            </div>
-                        </div>
-                        
-                        <div class="entry">
-                            <div class="entry-title">Languages</div>
-                            <div class="skills">
-                                <span class="skill">English (Fluent)</span>
-                                <span class="skill">Chinese (Native)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1>Experience</h1>
                 
-                <a href="Xu_Li_CV.pdf" class="download-btn" download>Download CV (PDF)</a>
+                <div class="research-content">
+                    <h2>Northeastern University</h2>
+                    <p><strong>Dec 2024 - Current</strong><br>
+                    Undergraduate Student Researcher<br>
+                    Mentor: <a href="https://wyshi.github.io/index.html" target="_blank">Weiyan Shi</a></p>
+                    
+                    <p><strong>Sep 2022 - May 2026 (Expected)</strong><br>
+                    B.S in Computer Science, Concentration in Artificial Intelligence<br>
+                    GPA: 4.0/4.0</p>
+                    
+                    <h2>UC Berkeley</h2>
+                    <p><strong>May 2025 - Current</strong><br>
+                    Visiting Research Student<br>
+                    Mentor: <a href="https://eps.berkeley.edu/people/weiqiang-zhu" target="_blank">Weiqiang Zhu</a></p>
+                    
+                    <h2>UESTC</h2>
+                    <p><strong>June 2024 - Dec 2024</strong><br>
+                    Visiting Research Student</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="contact">
-                <h3>Contact</h3>
-                <p>Email: li.xu2@northeastern.edu</p>
-                <p>Tel: +1 617 8746480</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-google-scholar"></i></a>
-                </div>
-            </div>
-            <div class="credits">
-                <p>© 2024 Xu (Oscar) Li | Built with HTML, CSS, and JavaScript</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="minimal-script.js"></script>
 </body>
 </html> 

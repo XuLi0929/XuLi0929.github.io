@@ -3,137 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xu (Oscar) Li - Publications</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Publications - Xu Li</title>
+    <link rel="stylesheet" href="minimal-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .publications-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .publication-card {
-            padding: 2rem;
-            margin-bottom: 2rem;
-            background-color: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-        
-        .publication-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        .publication-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-        
-        .publication-authors {
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
-        
-        .publication-venue {
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        
-        .publication-abstract {
-            margin-bottom: 1.5rem;
-        }
-        
-        .publication-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .publication-links a {
-            padding: 0.5rem 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: var(--border-radius);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.9rem;
-        }
-        
-        .publication-links a:hover {
-            background-color: var(--secondary-color);
-            color: white;
-        }
-        
-        .publication-thumbnail {
-            width: 100%;
-            margin-bottom: 1.5rem;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-        }
-        
-        .publication-thumbnail img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-        
-        .publication-thumbnail img:hover {
-            transform: scale(1.03);
-        }
-        
-        .filters {
-            display: flex;
-            margin-bottom: 2rem;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        
-        .filter-btn {
-            padding: 0.5rem 1rem;
-            background-color: var(--light-bg);
-            border: none;
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            transition: var(--transition);
-        }
-        
-        .filter-btn.active, .filter-btn:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .year-divider {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 2rem 0 1rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
-        }
-        
-        @media (max-width: 768px) {
-            .publication-links {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Xu Li</div>
             <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#research">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="research.html">research</a></li>
+                <li><a href="publications.html">publications</a></li>
+                <li><a href="cv.html">cv</a></li>
             </ul>
             <div class="theme-toggle">
                 <i class="fas fa-moon"></i>
@@ -142,157 +23,38 @@
     </header>
 
     <main>
-        <section class="publications-page">
+        <section class="publications">
             <div class="container">
-                <h1>Publications <span class="chinese-name">李旭</span></h1>
+                <h1>Publications 李旭</h1>
                 
-                <div class="filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="conference">Conference Papers</button>
-                    <button class="filter-btn" data-filter="journal">Journal Papers</button>
-                    <button class="filter-btn" data-filter="under-review">Under Review</button>
-                </div>
-                
-                <div class="publications-container">
-                    <!-- Year divider -->
-                    <div class="year-divider">2024</div>
+                <div class="research-content">
+                    <h2>2025</h2>
                     
-                    <!-- Publication 1 -->
-                    <div class="publication-card" data-type="conference">
-                        <div class="publication-thumbnail">
-                            <img src="https://via.placeholder.com/800x400?text=Emotion+Recognition" alt="Multi-modal emotion recognition">
-                        </div>
-                        <h3 class="publication-title">Enhancing Video-Based Emotion Recognition with Multi-Head Attention and Modality Dropout</h3>
-                        <p class="publication-authors">Xu (Oscar) Li</p>
-                        <p class="publication-venue">2nd International Conference on Machine Learning and Automation (CONF-MLA 2024), November 21, 2024, Adana, Turkey</p>
-                        <div class="publication-abstract">
-                            <p>Multimodal emotion recognition has become a critical component in enhancing human-computer interaction systems due to its capacity to integrate multiple modalities. In this paper, a novel cross-modal fusion model CFNSR-MSAFNet was proposed with Multi-Head Attention mechanism and modality drop out to improve the accuracy of emotion recognition. The Multi-Head Attention mechanism allows the model to learn and observe multiple aspects from both audio and video input, capturing complex interactions between these two modalities. Additionally, modality dropout is introduced during training, forcing the model to learn representations to handle the missing or noisy data. The proposed model achieved 78.33% of accuracy on the RAVDESS dataset.</p>
-                        </div>
-                        <div class="publication-links">
-                            <a href="http://dx.doi.org/10.4108/eai.21-11-2024.2354608" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fas fa-code"></i> Code</a>
-                            <a href="#"><i class="fas fa-desktop"></i> Slides</a>
-                        </div>
-                    </div>
+                    <p><strong>🌟 MM-Prompt: Cross-Modal Prompt Tuning for Continual Visual Question Answering</strong><br>
+                    <em>Xu Li, Fan Lyu</em><br>
+                    arXiv preprint (arXiv:2505.19455), May 2025<br>
+                    <a href="https://arxiv.org/abs/2505.19455" target="_blank">paper</a> | <a href="#" target="_blank">code_fig1</a><br>
+                    <br>
+                    <strong>Abstract:</strong> Continual Visual Question Answering (CVQA) based on pre-trained models (PTMs) has achieved promising progress by leveraging prompt tuning to enable continual multi-modal learning. However, most existing methods adopt cross-modal prompt isolation, constructing visual and textual prompts separately, which exacerbates modality imbalance and leads to degraded performance over time. To tackle this issue, we propose MM-Prompt, a novel framework incorporating cross-modal prompt query and cross-modal prompt recovery. The former enables balanced prompt selection by incorporating cross-modal signals during query formation, while the latter promotes joint prompt reconstruction through iterative cross-modal interactions, guided by an alignment loss to prevent representational drift. Extensive experiments show that MM-Prompt surpasses prior approaches in accuracy and knowledge retention, while maintaining balanced modality engagement throughout continual learning.</p>
                     
-                    <!-- Publication 2 -->
-                    <div class="publication-card" data-type="under-review">
-                        <div class="publication-thumbnail">
-                            <img src="https://via.placeholder.com/800x400?text=Landmark+Recognition" alt="Landmark recognition and retrieval">
-                        </div>
-                        <h3 class="publication-title">Recent advancements in Landmark Recognition & Retrieval Across Diverse Models: A survey</h3>
-                        <p class="publication-authors">Xu (Oscar) Li, et al.</p>
-                        <p class="publication-venue">Under Review</p>
-                        <div class="publication-abstract">
-                            <p>This comprehensive survey examines recent advancements in landmark recognition and retrieval systems, analyzing key trends, challenges, and innovations in the field. We categorize and compare various approaches, including CNN-based methods and hybrid models, highlighting their strengths, limitations, and potential future directions for research and practical applications.</p>
-                        </div>
-                        <div class="publication-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Preprint</a>
-                        </div>
-                    </div>
+                    <h2>2024</h2>
                     
-                    <!-- Year divider -->
-                    <div class="year-divider">2023-2024</div>
+                    <p><strong>Enhancing Video-Based Emotion Recognition with Multi-Head Attention and Modality Dropout</strong><br>
+                    <em>Xu Li</em><br>
+                    2nd International Conference on Machine Learning and Automation (CONF-MLA 2024)<br>
+                    <a href="http://dx.doi.org/10.4108/eai.21-11-2024.2354608" target="_blank">paper</a></p>
                     
-                    <!-- Publication 3 -->
-                    <div class="publication-card" data-type="conference">
-                        <div class="publication-thumbnail">
-                            <img src="https://via.placeholder.com/800x400?text=Animal+Classification" alt="Wild animal classification">
-                        </div>
-                        <h3 class="publication-title">Exploring the effect of different feature enhancement methods on wild animal classification</h3>
-                        <p class="publication-authors">Xu (Oscar) Li, et al.</p>
-                        <p class="publication-venue">21th International Computer Conference on Wavelet Active Media Technology and Information Processing</p>
-                        <div class="publication-abstract">
-                            <p>This study investigates the impact of various feature enhancement techniques on the performance of deep learning models for wild animal classification. We compare CBAM, DANet, and BAM approaches on a dataset comprising 90 different animal species. Our best-performing model achieved 92.2% accuracy, with a detailed analysis of how different enhancement methods affect classification performance across diverse animal categories.</p>
-                        </div>
-                        <div class="publication-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fas fa-code"></i> Code</a>
-                            <a href="#"><i class="fas fa-desktop"></i> Slides</a>
-                        </div>
-                    </div>
-
-                    <!-- Publication 4 -->
-                    <div class="publication-card" data-type="conference">
-                        <div class="publication-thumbnail">
-                            <img src="https://via.placeholder.com/800x400?text=Dogs+and+Cats+Classification" alt="Dogs and cats classification">
-                        </div>
-                        <h3 class="publication-title">Exploring the effect of depth and width of CNN models on binary classification of dogs and cats</h3>
-                        <p class="publication-authors">Xu (Oscar) Li, et al.</p>
-                        <p class="publication-venue">Conference Proceedings</p>
-                        <div class="publication-abstract">
-                            <p>This study explores how varying the depth and width of convolutional neural networks affects performance in binary classification tasks, specifically distinguishing between dogs and cats. The research investigates the relationship between model complexity and classification accuracy, providing insights into optimal network architecture design for resource-constrained environments.</p>
-                        </div>
-                        <div class="publication-links">
-                            <a href="https://api.semanticscholar.org/CorpusID:268438312" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fas fa-code"></i> Code</a>
-                        </div>
-                    </div>
+                    <h2>2023-2024</h2>
+                    
+                    <p><strong>Exploring the effect of depth and width of CNN models on binary classification of dogs and cats</strong><br>
+                    <em>Xu Li</em><br>
+                    Conference Proceedings<br>
+                    <a href="https://api.semanticscholar.org/CorpusID:268438312" target="_blank">paper</a></p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="contact">
-                <h3>Contact</h3>
-                <p>Email: li.xu2@northeastern.edu</p>
-                <p>Tel: +1 617 8746480</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-google-scholar"></i></a>
-                </div>
-            </div>
-            <div class="credits">
-                <p>© 2024 Xu (Oscar) Li | Built with HTML, CSS, and JavaScript</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // Publications filtering
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const publicationCards = document.querySelectorAll('.publication-card');
-        const yearDividers = document.querySelectorAll('.year-divider');
-        
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Active button
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                
-                const filter = button.getAttribute('data-filter');
-                
-                // Filter publications
-                publicationCards.forEach(card => {
-                    if (filter === 'all' || card.getAttribute('data-type') === filter) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-                
-                // Show/hide year dividers based on what's visible
-                yearDividers.forEach(divider => {
-                    const nextElements = [];
-                    let nextElement = divider.nextElementSibling;
-                    
-                    while (nextElement && !nextElement.classList.contains('year-divider')) {
-                        nextElements.push(nextElement);
-                        nextElement = nextElement.nextElementSibling;
-                    }
-                    
-                    const anyVisible = nextElements.some(
-                        el => el.style.display !== 'none' && el.classList.contains('publication-card')
-                    );
-                    
-                    divider.style.display = anyVisible ? 'block' : 'none';
-                });
-            });
-        });
-    </script>
+    <script src="minimal-script.js"></script>
 </body>
 </html> 
