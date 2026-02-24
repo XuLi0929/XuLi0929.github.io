@@ -177,14 +177,36 @@ h2:first-of-type {
     text-decoration: underline;
 }
 
-.paper-authors {
-    display: block;
-    margin-top: 4px;
-    font-size: 14px;
-    color: #666;
+.paper-title {
+    font-weight: 600;
+    line-height: 1.5;
 }
 
-body.dark-mode .paper-authors {
+.paper-authors {
+    margin-top: 2px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.paper-venue {
+    margin-top: 2px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.paper-venue a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.paper-venue a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode .paper-authors,
+body.dark-mode .paper-venue {
     color: #999;
 }
 
