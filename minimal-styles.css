@@ -177,6 +177,17 @@ h2:first-of-type {
     text-decoration: underline;
 }
 
+.paper-authors {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+body.dark-mode .paper-authors {
+    color: #999;
+}
+
 /* Contact */
 .contact {
     margin-top: 40px;
