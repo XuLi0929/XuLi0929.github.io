@@ -140,6 +140,23 @@ h2:first-of-type {
     text-decoration: underline;
 }
 
+/* Announcement */
+.announcement {
+    margin-top: 40px;
+    padding: 12px 16px;
+    border-left: 3px solid var(--accent);
+    background-color: rgba(0, 102, 204, 0.05);
+}
+
+.announcement p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+body.dark-mode .announcement {
+    background-color: rgba(0, 102, 204, 0.1);
+}
+
 /* Updates Section */
 .updates {
     margin-top: 40px;
