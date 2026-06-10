@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xu Li — incoming CS PhD student at Northeastern University, working on agent safety and human-AI coevolution.">
     <title>Xu Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="minimal-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
@@ -11,71 +15,80 @@
 <body>
     <header>
         <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <!-- <li><a href="publications.html">Publications</a></li> -->
-                <!-- <li><a href="cv.html">CV</a></li> -->
-            </ul>
-            <div class="theme-toggle">
-                <i class="fas fa-moon"></i>
+            <a href="#home" class="wordmark">Xu Li</a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <!-- <li><a href="publications.html">Publications</a></li> -->
+                    <!-- <li><a href="cv.html">CV</a></li> -->
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="intro">
-            <div class="container">
-                <div class="profile">
-                    <div class="intro-text">
-                        <p>Hi, I'm Xu Li (李旭).</p>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Xu Li <span class="cn">李旭</span></h1>
+                <p class="tagline">Agent safety · Human-AI coevolution</p>
 
-                        <p>I recently graduated from Northeastern University in Boston, MA, and will be joining <a href="https://wyshi.github.io/group.html" target="_blank">Chats Lab</a> as a PhD student in Fall 2026 under the supervision of Prof. Weiyan Shi.</p>
+                <p>Hi! I recently graduated from Northeastern University in Boston, MA, and will be joining <a href="https://wyshi.github.io/group.html" target="_blank">Chats Lab</a> as a PhD student in Fall 2026 under the supervision of Prof. Weiyan Shi. I'm currently an intern at <a href="https://www.virtueai.com/" target="_blank">VirtueAI</a>.</p>
 
-                        <p>I'm particularly interested in agent safety and human-AI coevolution.</p>
+                <p>I'm particularly interested in <strong>agent safety</strong> and <strong>human-AI coevolution</strong> — understanding how tool-using agents fail, and how people and AI systems shape each other over time.</p>
+            </div>
+            <div class="portrait-wrap">
+                <img src="xu_li.jpg" alt="Xu Li" class="portrait">
+            </div>
+        </section>
 
+        <div class="announcement">
+            <p>🎉 <strong>Unsafer in Many Turns</strong> has been accepted to <strong>ICML 2026</strong>, and selected as a <strong>Spotlight</strong> at the AI4GOOD Workshop @ ICML 2026!</p>
+        </div>
+
+        <section class="updates">
+            <h2><span>News</span></h2>
+
+            <div class="update-item">
+                <span class="update-date">2026.04</span>
+                <span class="update-content">
+                    <div class="paper-title">Unsafer in Many Turns: Benchmarking and Defending Multi-Turn Safety Risks in Tool-Using Agents</div>
+                    <div class="paper-authors"><strong>Xu Li</strong>, Simon Yu, Minzhou Pan, Yiyou Sun, Bo Li, Dawn Song, Xue Lin, Weiyan Shi*</div>
+                    <div class="paper-venue">
+                        <span class="tag">ICML 2026</span>
+                        <span class="tag tag-highlight">Spotlight @ AI4GOOD Workshop, ICML 2026</span>
+                        [<a href="https://www.arxiv.org/abs/2602.13379" target="_blank">pdf</a>] [<a href="https://x.com/shi_weiyan/status/2026300129901445196" target="_blank">X thread</a>] [<a href="https://unsafer-in-many-turns.github.io/" target="_blank">homepage</a>]
                     </div>
-                </div>
+                </span>
+            </div>
 
-                <div class="announcement">
-                    <p>🎉 <strong>Unsafer in Many Turns</strong> has been accepted by <strong>ICML 2026</strong>!</p>
-                </div>
+            <div class="update-item">
+                <span class="update-date">2025.09</span>
+                <span class="update-content">
+                    <div class="paper-title">ICCV 2025 6th CLVISION Workshop Challenge</div>
+                    <div class="paper-authors"><strong>4th place</strong> out of 203 submissions and 65 participants</div>
+                    <div class="paper-venue">[<a href="https://sites.google.com/view/clvision2025/challenge" target="_blank">link</a>]</div>
+                </span>
+            </div>
 
-                <div class="updates">
-                    <h2>Updates</h2>
-                    <div class="update-item">
-                        <span class="update-date">🎉 2026.04</span>
-                        <span class="update-content">
-                            <div class="paper-title">Unsafer in Many Turns: Benchmarking and Defending Multi-Turn Safety Risks in Tool-Using Agents</div>
-                            <div class="paper-authors"><strong>Xu Li</strong>, Simon Yu, Minzhou Pan, Yiyou Sun, Bo Li, Dawn Song, Xue Lin, Weiyan Shi*</div>
-                            <div class="paper-venue">Accepted to ICML 2026 [<a href="https://www.arxiv.org/abs/2602.13379" target="_blank">pdf</a>] [<a href="https://x.com/shi_weiyan/status/2026300129901445196" target="_blank">X thread</a>] [<a href="https://unsafer-in-many-turns.github.io/" target="_blank">homepage</a>]</div>
-                        </span>
-                    </div>
-                    <div class="update-item">
-                        <span class="update-date">🎉 2025.09</span>
-                        <span class="update-content">
-                            <div class="paper-title">ICCV 2025 6th CLVISION Workshop Challenge</div>
-                            <div class="paper-authors"><strong>4th place</strong> out of 203 submissions and 65 participants</div>
-                            <div class="paper-venue">[<a href="https://sites.google.com/view/clvision2025/challenge" target="_blank">link</a>]</div>
-                        </span>
-                    </div>
-                    <div class="update-item">
-                        <span class="update-date">🎉 2025.05</span>
-                        <span class="update-content">
-                            <div class="paper-title">MM-Prompt: Cross-Modal Prompt Tuning for Continual Visual Question Answering</div>
-                            <div class="paper-authors"><strong>Xu Li</strong>, Fan Lyu*</div>
-                            <div class="paper-venue">arXiv, 2025 [<a href="https://arxiv.org/abs/2505.19455" target="_blank">pdf</a>]</div>
-                        </span>
-                    </div>
-                </div>
+            <div class="update-item">
+                <span class="update-date">2025.05</span>
+                <span class="update-content">
+                    <div class="paper-title">MM-Prompt: Cross-Modal Prompt Tuning for Continual Visual Question Answering</div>
+                    <div class="paper-authors"><strong>Xu Li</strong>, Fan Lyu*</div>
+                    <div class="paper-venue"><span class="tag">arXiv 2025</span> [<a href="https://arxiv.org/abs/2505.19455" target="_blank">pdf</a>]</div>
+                </span>
+            </div>
+        </section>
 
-                <div class="contact">
-                    <p>Email: <a href="mailto:li.xu2@northeastern.edu">li.xu2@northeastern.edu</a></p>
-                    <div class="social-links">
-                        <a href="https://github.com/xli04" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/xuli04" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://scholar.google.com/citations?user=L-sRBZgAAAAJ&hl=zh-CN" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                    </div>
-                </div>
+        <section class="contact">
+            <h2><span>Contact</span></h2>
+            <p>Email: <a href="mailto:li.xu2@northeastern.edu">li.xu2@northeastern.edu</a></p>
+            <div class="social-links">
+                <a href="https://github.com/xli04" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/xuli04" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=L-sRBZgAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
             </div>
         </section>
     </main>
