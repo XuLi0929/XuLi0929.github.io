@@ -162,14 +162,14 @@ h2 {
 
 /* Hero */
 .hero {
-    display: flex;
-    gap: 48px;
-    align-items: flex-start;
     margin-bottom: 48px;
 }
 
-.hero-text {
-    flex: 1;
+/* the portrait floats, so clear it before the next section */
+.hero::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .hero-text p {
@@ -212,8 +212,9 @@ h2 {
 
 .portrait-wrap {
     position: relative;
-    flex-shrink: 0;
+    float: right;
     width: 200px;
+    margin: 6px 0 18px 40px;
 }
 
 .portrait-wrap::before {
@@ -432,7 +433,8 @@ h2 {
     }
 
     .hero {
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
         gap: 28px;
         align-items: center;
     }
@@ -442,7 +444,9 @@ h2 {
     }
 
     .portrait-wrap {
+        float: none;
         width: 170px;
+        margin: 0;
     }
 
     .update-item {
