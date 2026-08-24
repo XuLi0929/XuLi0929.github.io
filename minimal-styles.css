@@ -186,6 +186,30 @@ h2 {
     text-decoration: underline;
 }
 
+.hero-text ul.interests {
+    list-style: none;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.hero-text ul.interests li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 9px;
+    line-height: 1.7;
+}
+
+.hero-text ul.interests li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
 .portrait-wrap {
     position: relative;
     flex-shrink: 0;
@@ -273,6 +297,17 @@ h2 {
     font-size: 14px;
     color: var(--muted);
     line-height: 1.5;
+}
+
+.paper-authors a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.paper-authors a:hover {
+    color: var(--accent);
+    border-bottom-color: currentColor;
 }
 
 .paper-venue {
